@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://ui/diplomacy.gd" id=1]
+
+[node name="DiplomacyPanel" type="WindowDialog"]
+script = ExtResource( 1 )
+rect_min_size = Vector2(250,150)
+window_title = "Diplomacy"
+
+[node name="ButtonAlliance" type="Button" parent="DiplomacyPanel"]
+text = "Form Alliance"
+rect_position = Vector2(10,40)
+signal pressed -> DiplomacyPanel:_on_Alliance_pressed
+
+[node name="ButtonWar" type="Button" parent="DiplomacyPanel"]
+text = "Declare War"
+rect_position = Vector2(10,80)
+signal pressed -> DiplomacyPanel:_on_War_pressed
