@@ -5,7 +5,7 @@ extends Node2D
 @export var arc : int = 0
 @export var cav : int = 0
 
-const CELL := 48
+const CELL := 48  # размер клетки
 
 func power() -> float:
     return inf * 1 + arc * 1.5 + cav * 2
