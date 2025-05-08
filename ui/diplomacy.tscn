@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://ui/diplomacy.gd" id=1]
 
 [node name="DiplomacyPanel" type="WindowDialog"]
-script = ExtResource( 1 )
+script = ExtResource(1)
 rect_min_size = Vector2(250,150)
 window_title = "Diplomacy"
 
